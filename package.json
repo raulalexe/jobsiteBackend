@@ -1,0 +1,25 @@
+{
+  "name": "jobs",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0",
+    "fs": "0.0.2",
+    "mongoose": "4.4.14",
+    "mongoose-paginate": "^5.0.0",
+    "morgan": "^1.6.1",
+    "multer": "^1.1.0",
+    "nodemailer": "^2.4.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "5.4.0"
+  },
+  "version": "1.0.0",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
