@@ -1,0 +1,14 @@
+<h1><a href="http://www.findthejob4u.com">Find the Job 4U</a></h1>
+<h2>Your Weekly Jobs Newsletter Has Arrived!</h2>
+<div class="jobs-list">
+    <ul>
+        <% jobs.forEach(function(job){ %>
+        <li>
+            <h3><a href="http://www.findthejob4u.com/#/job/<%= job._id %>"><%= job.title %></a></h3>
+            <p>Work for <b><%= job.company %></b> in <b><% if(job.country) { %><%= job.country %>, <% } %><%= job.location %></b></p>
+            <p>You most probably need to speak <b><%= job.language %></b> for this position. %> 
+            <hr/>
+        </li>
+        <% }); %>
+    </ul>
+</div>

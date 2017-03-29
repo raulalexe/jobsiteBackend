@@ -4,7 +4,7 @@ var db = require('./db.js');
 
 var Schema = mongoose.Schema;
 
-var jobSchema = new Schema ({
+var jobSchema = new Schema({
     title: String,
     url: String,
     description: String,
@@ -15,7 +15,9 @@ var jobSchema = new Schema ({
     type: String,
     contractDuration: String,
     languages: String,
-    postDate: Date
+    postDate: Date,
+    language: String,
+    country: String
 });
 
 jobSchema.plugin(mongoosePaginate);
@@ -23,4 +25,3 @@ jobSchema.plugin(mongoosePaginate);
 var JobAd = db.model('JobAd', jobSchema);
 
 module.exports = JobAd;
-

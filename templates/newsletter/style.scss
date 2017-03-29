@@ -1,0 +1,42 @@
+@import '../common';
+body {
+    background-color: #ddd;
+    color: white;
+}
+
+h1,
+a {
+    color: #5FA8D9;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+li p,
+li a {
+    padding-left: 15px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #fff;
+}
+
+ul li:nth-child(even) {
+    background-color: #dee6de;
+}

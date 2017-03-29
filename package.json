@@ -3,22 +3,35 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "~1.0.1",
+    "compression": "^1.6.2",
+    "ejs": "^2.5.5",
+    "email-templates": "^2.5.4",
     "express": "~4.0.0",
+    "fb": "^1.1.1",
     "fs": "0.0.2",
     "mongoose": "4.4.14",
     "mongoose-paginate": "^5.0.0",
     "morgan": "^1.6.1",
     "multer": "^1.1.0",
-    "nodemailer": "^2.4.1"
+    "node-sass": "^4.5.0",
+    "nodemailer": "^2.4.1",
+    "sanitize-html": "^1.14.1",
+    "twitter": "^1.7.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha test"
   },
   "engines": {
     "node": "5.4.0"
   },
   "version": "1.0.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-useref": "^3.1.2"
+  },
   "author": "",
   "license": "ISC",
   "description": ""
